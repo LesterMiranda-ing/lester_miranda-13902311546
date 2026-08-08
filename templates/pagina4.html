@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Página 4: Multimedia y Estructura</h1>
+        <nav><a href="{{ url_for('home') }}">← Volver al Inicio</a></nav>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h2>Demostración de Figure y Figcaption</h2>
+            <figure>
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Ejemplo de Imagen">
+                <figcaption>Figura 1: Vista previa del logo</figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
