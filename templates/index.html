@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="40" height="40" style="vertical-align: middle;">
+        <h1 style="display: inline; margin-left: 10px;">Mi Aplicación Flask</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="{{ url_for('home') }}">Inicio</a></li>
+                <li><a href="{{ url_for('pagina1', nombre='Lester') }}">Página 1</a></li>
+                <li><a href="{{ url_for('pagina2') }}">Página 2 </a></li>
+                <li><a href="{{ url_for('pagina3') }}">Página 3 </a></li>
+                <li><a href="{{ url_for('pagina4') }}">Página 4 </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h2>Bienvenido a la página principal</h2>
+        <p>Selecciona cualquiera de los enlaces del menú para navegar por la aplicación.</p>
+    </main>
+</body>
+</html>

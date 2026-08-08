@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Página 1: Parámetro Dinámico</h1>
+        <nav><a href="{{ url_for('home') }}">← Volver al Inicio</a></nav>
+    </header>
+
+    <main id="main-content">
+        <section class="caja-info">
+            <h2>Bienvenido, {{ estudiante_nombre }}!</h2>
+            <p>Este nombre fue enviado desde la URL mediante la ruta <code>/estudiante/&lt;nombre&gt;</code> y renderizado con Jinja2.</p>
+        </section>
+
+        <aside class="caja-info">
+            <h3>Barra Lateral</h3>
+            <p>Información adicional de la sección.</p>
+        </aside>
+    </main>
+</body>
+</html>
