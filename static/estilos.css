@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Box Model aplicado */
+header {
+    background-color: #c16c37;
+    color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid    #3498db;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Selectores de ID y Clase */
+#main-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.caja-info {
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    background-color: #eef2f5;
+}
+
+/* Estilos de Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Formulario estilizado con pseudo-clases */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Pseudo-clases */
+input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #eaf2f8;
+}
+
+button:hover {
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+}
+
+input:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+/* Figure */
+figure {
+    border: 1px dashed #666;
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
