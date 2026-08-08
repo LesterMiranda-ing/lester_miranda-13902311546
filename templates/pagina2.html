@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Página 2: Tabla y Listas</h1>
+        <nav><a href="{{ url_for('home') }}">← Volver al Inicio</a></nav>
+    </header>
+
+    <main id="main-content">
+        <h2>Tabla de Cursos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Materia</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for curso in lista_cursos %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ curso }}</td>
+                    <td>Activo</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>Lista Anidada de Temas</h2>
+        <ul>
+            <li>Frontend
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </li>
+            <li>Backend
+                <ul>
+                    <li>Python</li>
+                    <li>Flask</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
